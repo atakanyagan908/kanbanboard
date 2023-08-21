@@ -1,0 +1,186 @@
+# Project Name 
+
+Kanban Board
+
+## Description
+
+This project is Restful API of an application where users can manage their notes.
+
+### API Endpoints
+
+Below, you will find information about the API endpoints offered by the project and how to use them:
+
+
+
+### Board
+
+### 1. List All Boards
+
+- **URL**: `/api/boards`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve all boards.
+
+### 2. Retrieve a Specific Board
+
+- **URL**: `/api/boards/{boardId}`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve a specific board. `{boardId}` represents the unique identifier of the desired board.
+
+### 3. Create a New Board
+
+- **URL**: `/api/boards`
+- **HTTP Method**: POST
+- **Description**: Use this endpoint to create a new board. It should contain a JSON body.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "New Board",
+        "description": "Description for this board."
+    }
+    ```
+
+### 4. Update a Board
+
+- **URL**: `/api/boards/{boardId}`
+- **HTTP Method**: PUT
+- **Description**: Use this endpoint to update the information of a specific board. `{boardId}` represents the identifier of the board being updated.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "Updated Board Title",
+        "description": "Updated board description."
+    }
+    ```
+
+### 5. Delete a Board
+
+- **URL**: `/api/boards/{boardId}`
+- **HTTP Method**: DELETE
+- **Description**: Use this endpoint to delete a specific board. `{boardId}` represents the identifier of the board to be deleted.
+
+### 6. Get All Lists By boardId
+
+- **URL**: `/api/boards/{boardId}/lists`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve all lists by boardId.
+
+----------------------------------------------------------------------------------
+
+### List
+
+### 1. List All Lists
+
+- **URL**: `/api/lists`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve all lists.
+
+### 2. Retrieve a Specific List
+
+- **URL**: `/api/lists/{listId}`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve a specific list. `{listId}` represents the unique identifier of the desired list.
+
+### 3. Create a New List
+
+- **URL**: `/api/lists`
+- **HTTP Method**: POST
+- **Description**: Use this endpoint to create a new list. It should contain a JSON body.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "New Board",
+        "boardId": "boardId for this list."
+    }
+    ```
+
+### 4. Update a List
+
+- **URL**: `/api/lists/{listId}`
+- **HTTP Method**: PUT
+- **Description**: Use this endpoint to update the information of a specific list. `{listId}` represents the identifier of the list being updated.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "Updated List Title",
+        "boardId": "Updated boardId description."
+    }
+    ```
+
+### 5. Delete a List
+
+- **URL**: `/api/lists/{listId}`
+- **HTTP Method**: DELETE
+- **Description**: Use this endpoint to delete a specific list. `{listId}` represents the identifier of the list to be deleted.
+
+### 6. Get All Cards By listId
+
+- **URL**: `/api/lists/{listId}/cards`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve all cards by listId.
+
+----------------------------------------------------------------------------------------------
+
+### Card
+
+
+### 1. List All Cards
+
+- **URL**: `/api/cards`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve all cards.
+
+### 2. Retrieve a Specific Card
+
+- **URL**: `/api/cards/{cardId}`
+- **HTTP Method**: GET
+- **Description**: Use this endpoint to retrieve a specific card. `{cardId}` represents the unique identifier of the desired card.
+
+### 3. Create a New Card
+
+- **URL**: `/api/cards`
+- **HTTP Method**: POST
+- **Description**: Use this endpoint to create a new card. It should contain a JSON body.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "New Board",
+        "description": "Description for this card.",
+        "listId": "listId for this card.",
+        "colorCode": "colorCode for this card.",
+        
+
+    }
+    ```
+
+### 4. Update a Card
+
+- **URL**: `/api/cards/{cardId}`
+- **HTTP Method**: PUT
+- **Description**: Use this endpoint to update the information of a specific card. `{cardId}` represents the identifier of the card being updated.
+
+    Sample JSON Body:
+    ```json
+    {
+        "title": "Updated Card Title",
+        "description": "Updated Card Description",
+        "listId": "Updated listId for this card.",
+        "colorCode": "Updated colorCode for this card.",
+    }
+    ```
+
+### 5. Delete a Card
+
+- **URL**: `/api/cards/{cardId}`
+- **HTTP Method**: DELETE
+- **Description**: Use this endpoint to delete a specific card. `{cardId}` represents the identifier of the card to be deleted.
+
+
+
+
+
+

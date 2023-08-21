@@ -1,0 +1,62 @@
+
+#Takip Edilen Adımlar
+
+19.08.2023 | 10.00 - 11.10
+
+
+İlk olarak figma tasarımını ve taskı inceleyerek projede hangi entitylerin yer alacağını, bunların hangi
+özelliklere sahip olacağını ve tablolar arasındaki ilişkinin türünün tespiti ile başladım.Daha sorna Task 
+deki beklentiler başlığı altında kısımdaki istenilenleri kurgulamaya başladım.
+
+#entityler
+
+Board
+-id (Primary Key)
+-title string
+-description string
+
+List
+-id (Primary Key)
+-title string
+-boardId (Foreign Key) 
+
+Card
+-id (Primary Key)
+-title string
+-description string
+-colorCode string
+-listId (Foreign Key)
+
+İlişkiler
+
+Board - List (1-n)
+List  - Card (1-n)
+
+
+19.08.2023  13.00 - 18.00
+
+Node js ile Restful API ler geliştirmek için express js kurdum ve örnek uygulamalarına baktım.
+
+Veritabanı işlemleri için node js de kullanılan ORM araçlarını araştırmaya başladım. ORM olarak Sequelize
+ile çalışmaya karar verdim. İlk olarak Sequelize dökümanından ihtiyacım olan metodları öğrendim yine entitylerin
+arasındaki 1-n ilişkiyi kurabilmek için hem dökümanı hem de başka web sitelerinden faydalandım.
+
+Request'in body sindeki input değerlerinin doğrulamasını(validation) yapmak için gerekli kütüphaneyi 
+https://www.npmjs.com/ adresinden buldum.
+
+
+20.08.2023 13.00 - 16.00
+
+Döküman hazırlama ve read.me
+
+İlk defa döküman hazırlayacağım için ne yazmam gerektiğini bilmiyordum bu nedenle internetten nelere
+yer vermem gerektiği hakkında bilgi topladım.
+
+21.08.2023 
+
+Döküman ve read me dosyasını yazma.
+Postman Collectionlarını oluşturdum.
+
+
+
+
